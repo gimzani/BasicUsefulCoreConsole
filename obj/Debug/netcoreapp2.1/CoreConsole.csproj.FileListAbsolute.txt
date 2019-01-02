@@ -1,0 +1,11 @@
+C:\Projects\_Briefcase\Dev\CoreConsole\bin\Debug\netcoreapp2.1\CoreConsole.deps.json
+C:\Projects\_Briefcase\Dev\CoreConsole\bin\Debug\netcoreapp2.1\CoreConsole.runtimeconfig.json
+C:\Projects\_Briefcase\Dev\CoreConsole\bin\Debug\netcoreapp2.1\CoreConsole.runtimeconfig.dev.json
+C:\Projects\_Briefcase\Dev\CoreConsole\bin\Debug\netcoreapp2.1\CoreConsole.dll
+C:\Projects\_Briefcase\Dev\CoreConsole\bin\Debug\netcoreapp2.1\CoreConsole.pdb
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.csprojAssemblyReference.cache
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.csproj.CoreCompileInputs.cache
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.AssemblyInfoInputs.cache
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.AssemblyInfo.cs
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.dll
+C:\Projects\_Briefcase\Dev\CoreConsole\obj\Debug\netcoreapp2.1\CoreConsole.pdb
