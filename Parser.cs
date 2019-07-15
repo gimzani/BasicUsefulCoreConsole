@@ -1,25 +1,19 @@
-
-using System.Linq;
-
 namespace CoreConsole
 {
-  public static class Parser
-  {
-    public static ICommand Parse(string commandString)
+    public static class Parser
     {
-      //--------------------------------
-      var commandParts = commandString.Split(' ').ToList();
-      var commandName = commandParts[0];
-      //--------------------------------
-      var args = commandParts.Skip(1).ToList();
-      //--------------------------------
-      switch (commandName)
-      {
-        case "exit": return new ExitCommand();
-        case "echo": return new EchoCommand(args);
-        default: return new UnknownCommand();
-      }
-      //--------------------------------
+        public static ICommand Parse(string commandString)
+        {
+            //--------------------------------
+            CommandSet commandSet = new CommandSet(commandString);
+            //--------------------------------
+            switch (commandSet.Command)
+            {
+                case "exit": return new ExitCommand();
+                case "echo": return new EchoCommand(commandSet);
+                default: return new UnknownCommand();
+            }
+            //--------------------------------
+        }
     }
-  }
 }

@@ -1,34 +1,35 @@
-
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CoreConsole
 {
-  public class EchoCommand : ICommand
-  {
-
-    List<string> args { get; set; }
-
-    public EchoCommand(List<string> args){
-      this.args = args;
-    }
-
-    public bool Execute()
+    public class EchoCommand : ICommand
     {
-      Console.WriteLine("You wrote 'echo' and : " + MergeArgs());
-      return false;
-    }
 
+        public CommandSet commandSet { get; set; }
 
-    string MergeArgs(){
-      StringBuilder sb = new StringBuilder();
-      foreach(string s in args){
-        if(sb.ToString()!="")
-        sb.Append(',');
-        sb.Append(s);
-      }
-      return sb.ToString();
+        public EchoCommand(CommandSet cs)
+        {
+            this.commandSet = cs;
+        }
+
+        public bool Execute()
+        {
+            Console.WriteLine("You wrote 'echo' and has Args : " + MergeArgs());
+            return false;
+        }
+
+        public string MergeArgs()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (KeyValuePair<string, string> kvp in commandSet.Args)
+            {
+                if (sb.ToString() != "")
+                    sb.Append(", ");
+                sb.Append(kvp.Key + "=" + kvp.Value);
+            }
+            return sb.ToString();
+        }
     }
-  }
 }
